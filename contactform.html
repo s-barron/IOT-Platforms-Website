@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>IOT Platforms</title>
+        <link rel="stylesheet" href=Assets/CSS/form_style.css />
+
+        <script type="text/javascript" src="Assets/Scripts/myscript.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <img src=Assets/Images/iot_header.jpg alt="IOT Devices Header" class="center" />
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="microbit.html">Micro:bit</a>
+                <a href="arduino.html">Arduino</a>
+                <a href="raspberrypi.html">Raspberry Pi</a>
+                <a href="tutorials.html">Tutorials</a>
+                <a href="contactform.html"><b>Contact Us</b></a>
+                <a href="report.html">Report</a>
+            </nav>
+
+        </header>
+
+        <div class="card">
+            <h2>Contact Form</h2>
+            <form action="#" name="contactForm" onsubmit="return validateForm()">
+
+                <div class="row">
+                    <div class="col1">
+                        <label>First Name*</label>
+                    </div>
+                    <div class="col2">
+                        <input type="text" class="generalInput" id="fname" name="fname" placeholder="Your name..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col1">
+                        <label>Last Name</label>
+                    </div>
+                    <div class="col2">
+                        <input type="text" class="generalInput" id="lname" name="lname" placeholder="Your last name..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col1">
+                        <label for="email">Email Address*</label>
+                    </div>
+                    <div class="col2">
+                        <input type="text" class="generalInput" id="email" name="email" placeholder="Your email..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col1">
+                        <label for="age">Age</label>
+                    </div>
+                    <div class="col2">
+                        <select class="generalInput">
+                            <option value="under18">Under 18</option>
+                            <option value="18-24">18-24</option>
+                            <option value="25-40">25-30</option>
+                            <option value="41-60">41-60</option>
+                            <option value="60+">60+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col1">
+                        <label>Previous Coding Experience</label>
+                    </div>
+                    <div class="col2">
+                        <input class="clickInput" type="checkbox" name="prog lang" value="python">Python<br>
+                        <input class="clickInput" type="checkbox" name="prog lang" value="java">Java<br>
+                        <input class="clickInput" type="checkbox" name="prog lang" value="c">C<br>
+                        <input class="clickInput" type="checkbox" name="prog lang" value="c++">C++<br>
+                        <input class="clickInput" type="checkbox" name="prog lang" value="c#">C#<br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col1">
+                        <label>I would be most interested in purchasing: </label>
+                    </div>
+                    <div class="col2">
+                        <label class="container">BBC Micro:bit
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Arduino
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="radio"></span>
+                        </label>
+                        <label class="container">Raspberry Pi
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col1">
+                        <label for="message">Message*</label>
+                    </div>
+                    <div class="col2">
+                        <textarea id="message" name="message" placeholder="Message goes here..."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+
+    </body>
+
+</html>

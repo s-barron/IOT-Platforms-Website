@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>IOT Platforms</title>
+        <link rel="stylesheet" href=Assets/CSS/style.css />  
+        
+    </head>
+
+    <body>
+        
+
+        <header>
+
+            <img src=Assets/Images/microbit_header.png alt="Micro:bit Header" class="center" />
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="microbit.html">Micro:bit</a>
+                <a href="arduino.html">Arduino</a>
+                <a href="raspberrypi.html">Raspberry Pi</a>
+                <a href="tutorials.html"><b>Tutorials</b></a>
+                <a href="contactform.html">Contact Us</a>
+                <a href="report.html">Report</a>
+            </nav>           
+            
+        </header>
+        
+        <div class = "maincolumn">
+            <div class = "card">
+                <h1>Micro:bit Tutorials</h1>
+                <h4 id="description">Introduction to Micro:bit</h4>
+   
+
+                <iframe id="videoPlayer" src="https://www.youtube.com/embed/u2u7UJSRuko" allowfullscreen class = "responsive"></iframe>
+                <div id="buttons">
+                    <button onclick = "getNextVideo();">Next Video</button>
+                    <button onclick = "video1();">Say Hello</button>
+                    <button onclick = "video2();">Electronic Magic 8 Ball</button>
+                    <button onclick = "video3();">Temperature Gauge</button>
+                    <button onclick = "video4();">Remote Burglar Alarm</button>
+                </div>    
+            </div>       
+
+            <script type="text/javascript" src="Assets/Scripts/myscript.js"></script>
+
+            <div class = "card">
+                <h1>Arduino Tutorial</h1>
+                <iframe width="768" height="432" src="https://www.youtube.com/embed/W6UENgS_UR4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="center"></iframe>
+            </div>
+            
+            <div class ="card">
+                <h1>Raspberry Pi Tutorial</h1>
+                <iframe width="768" height="432" src="https://www.youtube.com/embed/_snMNl5dplc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class = "center"></iframe>
+            </div>
+        
+        </div>         
+
+        <footer>
+            <h6>Site by: Sarah Barron</h6>
+        </footer>
+    </body>
+</html>

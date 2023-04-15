@@ -1,0 +1,288 @@
+
+/*used to center images*/
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: rgb(240, 242, 245);
+}
+
+
+/*styling top navigation bar */
+nav {
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: rgb(26, 33, 134);
+}
+  
+/*styling topnav links */
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+/*change color on hover*/
+nav a:hover {
+    background-color: rgb(69, 151, 172);
+    color: black;
+}
+
+/*styling all paragraph text*/
+p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.maincolumn {
+  float: center;
+  width: 100%;
+  height: auto;
+}
+
+.leftcolumn {
+  float: left;
+  width: 70%;
+  height: auto;
+}
+
+.rightcolumn {
+  float: right;
+  width: 27.5%;
+  height: auto;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 1.66%;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  height: auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*styling text beside image*/
+.textWithImage p {
+  display: inline-block;
+  vertical-align: top;
+  width: 65%;
+}
+
+.textWithImage img {
+  float: right;
+  border-radius: 50%;
+  width: 30%;
+}
+
+/*styling links in columns on the bottom of the home page*/
+
+h2 > a{
+  text-decoration: none;
+  color:black; 
+}
+
+h2 > a:hover{
+  color:rgb(74, 82, 158)
+}
+
+/*Styling table on Raspberry Pi webpage*/
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+table td {
+  text-align: center;
+}
+
+table tr:hover {
+  background-color:rgb(74, 152, 158)
+}
+
+/*creating responsive images*/
+.responsive {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/*creating collapsible content*/
+.collapsible {
+  border-radius: 25px;
+  background-color: rgb(74, 152, 158);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  margin-top: 25px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(74, 82, 158);;
+}
+
+.content {
+  border-radius: 25px;
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible:after {
+  content: '\2795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*styling video player*/
+#buttons {
+  width:30%;
+  display:inline-block;
+  vertical-align: top;
+  margin:right 10px;
+}
+
+button {
+  background-color: rgb(74, 152, 158);
+  border: none;
+  border-radius: 25px;
+  color: black;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#videoPlayer {
+  float: right;
+}
+
+#description {
+  text-align: center;
+}
+
+/*styling footer*/
+footer {
+  border-radius: 25px;
+  padding: 20px;
+  text-align: center;
+  background: rgb(26, 33, 134);
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+  
+
+* {box-sizing:border-box}
+
+@media screen and (max-width: 800px) {
+    .textWithImage,
+    .leftcolumn,
+    .rightcolumn,
+    .maincolumn,
+    .column {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    nav a {
+      float: none;
+      width: 100%;
+    }
+  }
